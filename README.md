@@ -1,22 +1,24 @@
-# 📦 FileTransferAWS Frontend
+# FileTransferAWS Frontend
 
-Ein einfaches Frontend zum Hochladen und Verwalten von Dateien in AWS S3.
+Kleines Frontend-Projekt zum Hochladen und Verwalten von Dateien in AWS S3.
 
-## 🚀 Features
+## Was kann die App?
 
-* 🔐 Benutzer-Authentifizierung
-* 📤 Dateien hochladen
-* 📥 Dateien herunterladen
-* 🗑️ Dateien löschen
-* ☁️ Speicherung über AWS S3
+* Login / Authentifizierung
+* Dateien hochladen
+* Dateien herunterladen
+* Dateien löschen
+* Speicherung läuft über AWS S3
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-* React + TypeScript
+* React (mit TypeScript)
 * Vite
 * AWS Amplify
 
-## 📦 Installation
+## Setup
+
+Repo klonen und Dependencies installieren:
 
 ```bash
 git clone https://github.com/markusschneider2710/FileTransferAWS-Frontend.git
@@ -24,31 +26,21 @@ cd FileTransferAWS-Frontend
 npm install
 ```
 
-## ▶️ Projekt starten
+## Starten
 
 ```bash
 npm run dev
 ```
 
-Danach im Browser öffnen:
+Dann im Browser öffnen:
 [http://localhost:5173](http://localhost:5173)
 
-## ⚙️ Konfiguration
+## AWS Konfiguration
 
-Die AWS-Konfiguration befindet sich in:
+Die Config liegt hier:
 
 ```
 src/aws-config.ts
 ```
 
-👉 Dort müssen deine eigenen AWS-Daten eingetragen werden (z. B. S3, Cognito).
-
-## 📁 Projektstruktur
-
-```
-src/
- ├── components/   # UI Komponenten
- ├── services/     # AWS / API Logik
- ├── aws-config.ts # AWS Einstellungen
- └── App.tsx
-```
+Dort musst du deine eigenen AWS-Werte eintragen (z. B. für S3 und Cognito), sonst funktioniert nichts.
